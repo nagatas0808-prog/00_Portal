@@ -4,300 +4,231 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Apps Collection | 10の便利なWebアプリ</title>
-    <meta name="description" content="日常や仕事で役立つ、シンプルで便利な10種類のWebツールを集めました。すべて無料でブラウザからすぐに利用可能です。">
-    <link rel="canonical" href="https://00portal.kotojisamadake-tool.workers.dev/">
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>🛠 便利ツール集 - 黄金時代ポータル</title>
+    <meta name="description" content="日常や仕事で役立つ、シンプルで便利な10種類のWebツールを集めました。">
     <style>
         body {
-            background-color: #020617;
-            color: #f8fafc;
-            font-family: 'Inter', sans-serif;
-            background-image:
-                radial-gradient(at 0% 0%, hsla(253, 16%, 7%, 1) 0, transparent 50%),
-                radial-gradient(at 50% 0%, hsla(225, 39%, 30%, 0.1) 0, transparent 50%),
-                radial-gradient(at 100% 0%, hsla(339, 49%, 30%, 0.1) 0, transparent 50%);
-            background-attachment: fixed;
+            background-color: #ffffff;
+            color: #000000;
+            font-family: "MS PGothic", "MS Pゴシック", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+            margin: 20px;
         }
 
-        .glass {
-            background: rgba(30, 41, 59, 0.4);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            transition: all 0.3s ease;
+        h1 {
+            color: #000080;
+            border-bottom: 3px double #000080;
+            padding-bottom: 5px;
+            text-align: center;
         }
 
-        .glass:hover {
-            background: rgba(30, 41, 59, 0.7);
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
-            border-color: rgba(255, 255, 255, 0.2);
+        .container {
+            width: 800px;
+            margin: 0 auto;
         }
 
-        .gradient-text {
-            background: linear-gradient(to right, #60a5fa, #c084fc);
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
+        .marquee-area {
+            background-color: #000080;
+            color: #ffffff;
+            padding: 5px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        table.menu {
+            width: 100%;
+            border-collapse: collapse;
+            border: 2px solid #000000;
+        }
+
+        table.menu th {
+            background-color: #cccccc;
+            border: 1px solid #000000;
+            padding: 8px;
+            text-align: left;
+        }
+
+        table.menu td {
+            border: 1px solid #000000;
+            padding: 10px;
+            vertical-align: top;
+        }
+
+        .app-link {
+            font-size: 18px;
+            font-weight: bold;
+            color: #0000ff;
+            text-decoration: underline;
+        }
+
+        .app-link:visited {
+            color: #800080;
+        }
+
+        .counter {
+            text-align: center;
+            font-size: 20px;
+            margin: 20px 0;
+            border: 1px inset #cccccc;
+            padding: 10px;
+            display: inline-block;
+        }
+
+        .footer {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 12px;
+            color: #666666;
+            border-top: 1px solid #cccccc;
+            padding-top: 10px;
+        }
+
+        .new-tag {
+            color: #ff0000;
+            font-weight: bold;
+            font-style: italic;
+            font-size: 12px;
+        }
+
+        .hot-tag {
+            background-color: #ff0000;
+            color: #ffffff;
+            padding: 2px 5px;
+            font-size: 10px;
+            border-radius: 3px;
         }
     </style>
-    <!-- Google Search Console 所有権確認用メタタグ -->
-    <meta name="google-site-verification" content="nDfNlMk2wvPV-koGT7Ur1MandTe503qb1CQ0kJw6fdA" />
-    <!-- Google AdSense 審査・所有権確認用コード -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5383957100145583"
-        crossorigin="anonymous"></script>
 </head>
 
-<body class="min-h-screen py-12 px-4 sm:px-6 lg:px-8">
-    <div class="max-w-6xl mx-auto">
+<body>
+    <div class="container">
+        <h1>🛠 便利ツール集</h1>
 
-        <!-- Header Section -->
-        <a href="https://00portal.kotojisamadake-tool.workers.dev/"
-            class="block text-center mb-16 hover:opacity-90 transition-opacity">
-            <h1 class="text-4xl md:text-6xl font-extrabold mb-4 tracking-tight">
-                <span class="gradient-text">Web Apps</span> Collection
-            </h1>
-            <p class="text-slate-400 text-lg max-w-2xl mx-auto">
-                日常や仕事で役立つ、シンプルで便利な10種類のWebツールを開発しました。すべて無料で、ブラウザからインストール不要ですぐに利用できます。
-            </p>
-        </a>
-
-        <!-- Apps Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-
-            <!-- App 01 -->
-            <a href="https://01autopromptbuilder.kotojisamadake-tool.workers.dev/" target="_blank"
-                rel="noopener noreferrer" class="glass rounded-2xl p-6 group block relative overflow-hidden">
-                <div class="absolute top-0 right-0 p-4 opacity-0 group-hover:opacity-100 transition-opacity">
-                    <svg class="w-5 h-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
-                    </svg>
-                </div>
-                <div
-                    class="w-12 h-12 bg-blue-500/20 text-blue-400 rounded-xl flex items-center justify-center mb-4 text-2xl">
-                    🤖
-                </div>
-                <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">01: Auto
-                    Prompt Builder</h3>
-                <p class="text-sm text-slate-400 leading-relaxed">
-                    AI（ChatGPTやClaudeなど）への指示を最適化するプロンプト作成ツール。目的や条件を入力するだけで、質の高い回答を引き出すプロンプトを自動生成します。
-                </p>
-            </a>
-
-            <!-- App 02 -->
-            <a href="https://02textcounter.kotojisamadake-tool.workers.dev/" target="_blank" rel="noopener noreferrer"
-                class="glass rounded-2xl p-6 group block relative overflow-hidden">
-                <div class="absolute top-0 right-0 p-4 opacity-0 group-hover:opacity-100 transition-opacity">
-                    <svg class="w-5 h-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
-                    </svg>
-                </div>
-                <div
-                    class="w-12 h-12 bg-emerald-500/20 text-emerald-400 rounded-xl flex items-center justify-center mb-4 text-2xl">
-                    📝
-                </div>
-                <h3 class="text-xl font-bold text-white mb-2 group-hover:text-emerald-400 transition-colors">02: Text
-                    Analyzer PRO</h3>
-                <p class="text-sm text-slate-400 leading-relaxed">
-                    テキストを貼り付けるだけで、文字数・読了時間・漢字やひらがなの構成比を瞬時に解析。ライターやブロガーのための高度な文章分析ツールです。
-                </p>
-            </a>
-
-            <!-- App 03 -->
-            <a href="https://03colorpalette.kotojisamadake-tool.workers.dev/" target="_blank" rel="noopener noreferrer"
-                class="glass rounded-2xl p-6 group block relative overflow-hidden">
-                <div class="absolute top-0 right-0 p-4 opacity-0 group-hover:opacity-100 transition-opacity">
-                    <svg class="w-5 h-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
-                    </svg>
-                </div>
-                <div
-                    class="w-12 h-12 bg-pink-500/20 text-pink-400 rounded-xl flex items-center justify-center mb-4 text-2xl">
-                    🎨
-                </div>
-                <h3 class="text-xl font-bold text-white mb-2 group-hover:text-pink-400 transition-colors">03: Color
-                    Palette PRO</h3>
-                <p class="text-sm text-slate-400 leading-relaxed">
-                    ベースカラーを1つ選ぶだけで、補色・類似色・トライアドなど5種類の美しい配色パターンを自動生成します。デザイナー向けの色彩支援ツールです。
-                </p>
-            </a>
-
-            <!-- App 04 -->
-            <a href="https://04qrgenerator.kotojisamadake-tool.workers.dev/" target="_blank" rel="noopener noreferrer"
-                class="glass rounded-2xl p-6 group block relative overflow-hidden">
-                <div class="absolute top-0 right-0 p-4 opacity-0 group-hover:opacity-100 transition-opacity">
-                    <svg class="w-5 h-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
-                    </svg>
-                </div>
-                <div
-                    class="w-12 h-12 bg-indigo-500/20 text-indigo-400 rounded-xl flex items-center justify-center mb-4 text-2xl">
-                    📱
-                </div>
-                <h3 class="text-xl font-bold text-white mb-2 group-hover:text-indigo-400 transition-colors">04: QR Code
-                    Generator</h3>
-                <p class="text-sm text-slate-400 leading-relaxed">
-                    URLやテキストから一瞬でQRコードを生成。色やサイズのカスタマイズ、ロゴの埋め込みにも対応し、高画質でダウンロード可能です。
-                </p>
-            </a>
-
-            <!-- App 05 -->
-            <a href="https://05passwordgenerator.kotojisamadake-tool.workers.dev/" target="_blank"
-                rel="noopener noreferrer" class="glass rounded-2xl p-6 group block relative overflow-hidden">
-                <div class="absolute top-0 right-0 p-4 opacity-0 group-hover:opacity-100 transition-opacity">
-                    <svg class="w-5 h-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
-                    </svg>
-                </div>
-                <div
-                    class="w-12 h-12 bg-yellow-500/20 text-yellow-400 rounded-xl flex items-center justify-center mb-4 text-2xl">
-                    🔐
-                </div>
-                <h3 class="text-xl font-bold text-white mb-2 group-hover:text-yellow-400 transition-colors">05: Password
-                    Generator</h3>
-                <p class="text-sm text-slate-400 leading-relaxed">
-                    文字数や使用する文字種（英数字・記号など）を指定して、安全性の高い強固なパスワードを瞬時に生成。セキュリティ強度も一目で確認できます。
-                </p>
-            </a>
-
-            <!-- App 06 -->
-            <a href="https://06unitconverter.kotojisamadake-tool.workers.dev/" target="_blank" rel="noopener noreferrer"
-                class="glass rounded-2xl p-6 group block relative overflow-hidden">
-                <div class="absolute top-0 right-0 p-4 opacity-0 group-hover:opacity-100 transition-opacity">
-                    <svg class="w-5 h-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
-                    </svg>
-                </div>
-                <div
-                    class="w-12 h-12 bg-teal-500/20 text-teal-400 rounded-xl flex items-center justify-center mb-4 text-2xl">
-                    ⚖️
-                </div>
-                <h3 class="text-xl font-bold text-white mb-2 group-hover:text-teal-400 transition-colors">06: Unit
-                    Converter</h3>
-                <p class="text-sm text-slate-400 leading-relaxed">
-                    長さ、重さ、面積、体積など、様々な単位を相互に変換できるツール。直感的なインターフェースで、世界中のあらゆる単位計算を簡単に。
-                </p>
-            </a>
-
-            <!-- App 07 -->
-            <a href="https://07pomodorotimer.kotojisamadake-tool.workers.dev/" target="_blank" rel="noopener noreferrer"
-                class="glass rounded-2xl p-6 group block relative overflow-hidden">
-                <div class="absolute top-0 right-0 p-4 opacity-0 group-hover:opacity-100 transition-opacity">
-                    <svg class="w-5 h-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
-                    </svg>
-                </div>
-                <div
-                    class="w-12 h-12 bg-rose-500/20 text-rose-400 rounded-xl flex items-center justify-center mb-4 text-2xl">
-                    🍅
-                </div>
-                <h3 class="text-xl font-bold text-white mb-2 group-hover:text-rose-400 transition-colors">07: Pomodoro
-                    Timer</h3>
-                <p class="text-sm text-slate-400 leading-relaxed">
-                    25分の集中と5分の休憩を繰り返す「ポモドーロ・テクニック」専用タイマー。タスク管理機能も備え、あなたの生産性を劇的に向上させます。
-                </p>
-            </a>
-
-            <!-- App 08 -->
-            <a href="https://08agecalculator.kotojisamadake-tool.workers.dev/" target="_blank" rel="noopener noreferrer"
-                class="glass rounded-2xl p-6 group block relative overflow-hidden">
-                <div class="absolute top-0 right-0 p-4 opacity-0 group-hover:opacity-100 transition-opacity">
-                    <svg class="w-5 h-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
-                    </svg>
-                </div>
-                <div
-                    class="w-12 h-12 bg-purple-500/20 text-purple-400 rounded-xl flex items-center justify-center mb-4 text-2xl">
-                    🎂
-                </div>
-                <h3 class="text-xl font-bold text-white mb-2 group-hover:text-purple-400 transition-colors">08: Age
-                    Calculator</h3>
-                <p class="text-sm text-slate-400 leading-relaxed">
-                    生年月日を入力するだけで、正確な年齢、生まれてからの総日数、次の誕生日までの日数を瞬時に計算。履歴書の作成や記念日の確認に便利です。
-                </p>
-            </a>
-
-            <!-- App 09 -->
-            <a href="https://09markdowneditor.kotojisamadake-tool.workers.dev/" target="_blank"
-                rel="noopener noreferrer" class="glass rounded-2xl p-6 group block relative overflow-hidden">
-                <div class="absolute top-0 right-0 p-4 opacity-0 group-hover:opacity-100 transition-opacity">
-                    <svg class="w-5 h-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
-                    </svg>
-                </div>
-                <div
-                    class="w-12 h-12 bg-orange-500/20 text-orange-400 rounded-xl flex items-center justify-center mb-4 text-2xl">
-                    ✍️
-                </div>
-                <h3 class="text-xl font-bold text-white mb-2 group-hover:text-orange-400 transition-colors">09: Markdown
-                    Editor</h3>
-                <p class="text-sm text-slate-400 leading-relaxed">
-                    ブラウザ上で動作する軽量なMarkdownエディタ。リアルタイムプレビュー機能付きで、書いた内容をすぐにHTMLやPDFとして出力可能です。
-                </p>
-            </a>
-
-            <!-- App 10 -->
-            <a href="https://10gradientgenerator.kotojisamadake-tool.workers.dev/" target="_blank"
-                rel="noopener noreferrer" class="glass rounded-2xl p-6 group block relative overflow-hidden">
-                <div class="absolute top-0 right-0 p-4 opacity-0 group-hover:opacity-100 transition-opacity">
-                    <svg class="w-5 h-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
-                    </svg>
-                </div>
-                <div
-                    class="w-12 h-12 bg-cyan-500/20 text-cyan-400 rounded-xl flex items-center justify-center mb-4 text-2xl">
-                    ✨
-                </div>
-                <h3 class="text-xl font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors">10: CSS
-                    Gradient Generator</h3>
-                <p class="text-sm text-slate-400 leading-relaxed">
-                    直感的な操作で美しいCSSグラデーションを作成できるツール。複数の色や角度を調整し、ワンクリックでCSSコードをコピーできます。
-                </p>
-            </a>
-
-            <!-- App 11 -->
-            <a href="https://11babylog.kotojisamadake-tool.workers.dev/"
-                class="glass rounded-2xl p-6 group block relative overflow-hidden">
-                <div class="absolute top-0 right-0 p-4 opacity-0 group-hover:opacity-100 transition-opacity">
-                    <svg class="w-5 h-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
-                    </svg>
-                </div>
-                <div
-                    class="w-12 h-12 bg-blue-500/20 text-blue-400 rounded-xl flex items-center justify-center mb-4 text-2xl">
-                    👶
-                </div>
-                <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">11: Baby Log
-                </h3>
-                <p class="text-sm text-slate-400 leading-relaxed">
-                    2025年12月生まれの赤ちゃんのための育児管理。授乳・オムツ・睡眠を片手で爆速記録。夫婦間共有のための設定も備えたモダンな育児ログ。
-                </p>
-            </a>
-
+        <div class="marquee-area">
+            <marquee>いらっしゃいませ！ここは日常のちょっとした不便を解消する「便利ツール集」ポータルサイトです。ごゆっくりどうぞ！</marquee>
         </div>
 
-        <footer class="mt-20 text-center text-slate-500 text-sm border-t border-slate-800 pt-8 pb-4">
-        </footer>
-    </div>
+        <div style="text-align: center;">
+            <div class="counter">
+                あなたは <b>00012345</b> 人目の訪問者です！<br>
+                （キリ番報告は掲示板までお願いします）
+            </div>
+        </div>
 
-    <!-- admax -->
-    <script src="https://adm.shinobi.jp/s/5dfe8bfce49a43ffe78096b109972b5b"></script>
-    <!-- admax -->
+        <p style="text-align: center; font-size: 14px;">
+            最終更新日：2026/03/05
+        </p>
+
+        <table class="menu">
+            <tr>
+                <th colspan="2">ツール一覧</th>
+            </tr>
+            <!-- 01 -->
+            <tr>
+                <td width="250">
+                    <a href="../01_Auto_Prompt_Builder/index.html" class="app-link">AIプロンプト作成機</a>
+                    <span class="hot-tag">HOT!</span>
+                </td>
+                <td>
+                    AI（ChatGPT等）の能力を引き出す魔法のプロンプトを自動生成します。
+                </td>
+            </tr>
+            <!-- 02 -->
+            <tr>
+                <td>
+                    <a href="../02_Text_Counter/index.html" class="app-link">文字数カウント君</a>
+                </td>
+                <td>
+                    文章の文字数、読了時間、漢字比率を瞬時に解析するお役立ちツール。
+                </td>
+            </tr>
+            <!-- 03 -->
+            <tr>
+                <td>
+                    <a href="../03_Color_Palette/index.html" class="app-link">配色パレット</a>
+                </td>
+                <td>
+                    デザインの配色に迷ったとき。美しいカラーパターンを提案します。
+                </td>
+            </tr>
+            <!-- 04 -->
+            <tr>
+                <td>
+                    <a href="../04_QR_Generator/index.html" class="app-link">QRコード作成</a>
+                </td>
+                <td>
+                    URLやテキストをQRコードに変換。ロゴ入れも可能です。
+                </td>
+            </tr>
+            <!-- 05 -->
+            <tr>
+                <td>
+                    <a href="../05_Password_Generator/index.html" class="app-link">パスワード生成ツール</a>
+                </td>
+                <td>
+                    セキュアなパスワードをランダム生成。安全性チェック機能付き。
+                </td>
+            </tr>
+            <!-- 06 -->
+            <tr>
+                <td>
+                    <a href="../06_Unit_Converter/index.html" class="app-link">単位変換！</a>
+                </td>
+                <td>
+                    長さ、重さ、面積などの面倒な単位計算を瞬時に解決。
+                </td>
+            </tr>
+            <!-- 07 -->
+            <tr>
+                <td>
+                    <a href="../07_Pomodoro_Timer/index.html" class="app-link">集中タイマー</a>
+                </td>
+                <td>
+                    25分集中して5分休む！ポモドーロテクニックで能率アップ。
+                </td>
+            </tr>
+            <!-- 08 -->
+            <tr>
+                <td>
+                    <a href="../08_Age_Calculator/index.html" class="app-link">年齢計算くん</a>
+                </td>
+                <td>
+                    誕生日から現在の正確な年齢や総日数を割り出します。
+                </td>
+            </tr>
+            <!-- 09 -->
+            <tr>
+                <td>
+                    <a href="../09_Markdown_Editor/index.html" class="app-link">簡易マークダウン</a>
+                </td>
+                <td>
+                    ブラウザ上で書ける、リアルタイムプレビュー付きのエディタ。
+                </td>
+            </tr>
+            <!-- 10 -->
+            <tr>
+                <td>
+                    <a href="../10_Gradient_Generator/index.html" class="app-link">背景グラデーション</a>
+                    <span class="new-tag">New!</span>
+                </td>
+                <td>
+                    Web背景に使える美しいCSSグラデーションコードを生成します。
+                </td>
+            </tr>
+        </table>
+
+        <div style="margin-top: 30px; text-align: center; border: 1px dotted #666666; padding: 10px;">
+            <p><b>推奨閲覧環境</b></p>
+            <p style="font-size: 14px;">
+                Windows Internet Explorer 5.5 以上<br>
+                画面解像度 800x600 以上推奨
+            </p>
+        </div>
+
+        <div class="footer">
+            Copyright (C) 2026 便利ツール集制作委員会 All Rights Reserved.<br>
+            当サイトはリンクフリーです。
+        </div>
+    </div>
 </body>
 
 </html>
